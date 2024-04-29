@@ -1,0 +1,10 @@
+body{
+    background-color: #ec729c;
+    font-family: 'Romantic', sans-serif;
+}
+  h1{
+    margin-top: 50px;
+  }
+#botao-calcular{
+  margin-top: 32px;
+}
