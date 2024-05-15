@@ -19,7 +19,7 @@ inquirer
     let qr_svg = qr.image(url);
     qr_svg.pipe(fs.createWriteStream("qr_img.png"));
 
-    fs.writeFileFile('URL.txt', url, (err) => {
+    fs.writeFile('URL.txt', url, (err) => {
         if (err) throw err;
         console.log("QR Code Generated successfully")
     });
@@ -27,8 +27,8 @@ inquirer
   })
   .catch((error) => {
     if (error.isTtyError) {
-        console.log("error");
+       
     } else {
-        console.log("error");
+
     }
   });
