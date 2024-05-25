@@ -3,10 +3,10 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) =>{
-    res.sendStatus(201);
+    res.send("<h1>Home Page</h1>");
 });
 app.post("/register", (req,res) =>{
-    res.sendStatus(200);
+    res.sendStatus(201);
 });
 app.put("/user/henrique", (req,res) =>{
     res.sendStatus(200);
@@ -18,5 +18,5 @@ app.delete("/user/henrique", (req,res) =>{
     res.sendStatus(200);
 });
 app.listen(port, () =>{
-    console.log(`Server started on port ${port}`)
-})
+    console.log(`Server started on port ${port}`);
+});
